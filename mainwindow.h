@@ -21,6 +21,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_actionnew_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString currentFile = "";

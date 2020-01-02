@@ -39,9 +39,129 @@
      <height>25</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="actionnew"/>
+    <addaction name="actionopen"/>
+    <addaction name="actionsave_as"/>
+    <addaction name="actionprint"/>
+    <addaction name="actionexit"/>
+   </widget>
+   <widget class="QMenu" name="menuedit">
+    <property name="title">
+     <string>edit</string>
+    </property>
+    <addaction name="actioncopy"/>
+    <addaction name="actioncut"/>
+    <addaction name="actionpaste"/>
+    <addaction name="actionundo"/>
+    <addaction name="actionredo"/>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menuedit"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionnew"/>
+   <addaction name="actionopen"/>
+   <addaction name="actionsave_as"/>
+   <addaction name="actioncopy"/>
+   <addaction name="actioncut"/>
+   <addaction name="actionpaste"/>
+  </widget>
+  <action name="actionnew">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/imgs/C:/Users/parsa_8lttcfs/Downloads/Compressed/Icons/Icons/New.bmp</normaloff>:/imgs/C:/Users/parsa_8lttcfs/Downloads/Compressed/Icons/Icons/New.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>new</string>
+   </property>
+  </action>
+  <action name="actionopen">
+   <property name="icon">
+    <iconset>
+     <normalon>:/imgs/C:/Users/parsa_8lttcfs/Downloads/Compressed/Icons/Icons/Open.bmp</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>open</string>
+   </property>
+  </action>
+  <action name="actionsave_as">
+   <property name="icon">
+    <iconset>
+     <normalon>:/imgs/C:/Users/parsa_8lttcfs/Downloads/Compressed/Icons/Icons/Save.bmp</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>save as</string>
+   </property>
+  </action>
+  <action name="actionprint">
+   <property name="text">
+    <string>print</string>
+   </property>
+  </action>
+  <action name="actionexit">
+   <property name="text">
+    <string>exit</string>
+   </property>
+  </action>
+  <action name="actioncopy">
+   <property name="icon">
+    <iconset>
+     <normalon>:/imgs/C:/Users/parsa_8lttcfs/Downloads/Compressed/Icons/Icons/Copy.bmp</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>copy</string>
+   </property>
+  </action>
+  <action name="actioncut">
+   <property name="icon">
+    <iconset>
+     <normalon>:/imgs/C:/Users/parsa_8lttcfs/Downloads/Compressed/Icons/Icons/Cut.bmp</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>cut</string>
+   </property>
+  </action>
+  <action name="actionpaste">
+   <property name="icon">
+    <iconset>
+     <normalon>:/imgs/C:/Users/parsa_8lttcfs/Downloads/Compressed/Icons/Icons/Paste.bmp</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>paste</string>
+   </property>
+  </action>
+  <action name="actionundo">
+   <property name="text">
+    <string>undo</string>
+   </property>
+  </action>
+  <action name="actionredo">
+   <property name="text">
+    <string>redo</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

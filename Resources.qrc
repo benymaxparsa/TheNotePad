@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/imgs">
+        <file>C:/Users/parsa_8lttcfs/Downloads/Compressed/Icons/Icons/Copy.bmp</file>
+        <file>C:/Users/parsa_8lttcfs/Downloads/Compressed/Icons/Icons/Cut.bmp</file>
+        <file>C:/Users/parsa_8lttcfs/Downloads/Compressed/Icons/Icons/DeleteSticky.bmp</file>
+        <file>C:/Users/parsa_8lttcfs/Downloads/Compressed/Icons/Icons/New.bmp</file>
+        <file>C:/Users/parsa_8lttcfs/Downloads/Compressed/Icons/Icons/Open.bmp</file>
+        <file>C:/Users/parsa_8lttcfs/Downloads/Compressed/Icons/Icons/Paste.bmp</file>
+        <file>C:/Users/parsa_8lttcfs/Downloads/Compressed/Icons/Icons/Save.bmp</file>
+    </qresource>
+</RCC>
