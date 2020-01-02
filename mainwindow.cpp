@@ -54,3 +54,33 @@ void MainWindow::on_actionsave_as_triggered()
     out << text;
     file.close();
 }
+
+void MainWindow::on_actionexit_triggered()
+{
+    QApplication::quit();
+}
+
+void MainWindow::on_actioncopy_triggered()
+{
+    ui->textEdit->copy();
+}
+
+void MainWindow::on_actioncut_triggered()
+{
+    ui->textEdit->cut();
+}
+
+void MainWindow::on_actionpaste_triggered()
+{
+    ui->textEdit->paste();
+}
+
+void MainWindow::on_actionundo_triggered()
+{
+    ui->textEdit->undo();
+}
+
+void MainWindow::on_actionredo_triggered()
+{
+    ui->textEdit->redo();
+}

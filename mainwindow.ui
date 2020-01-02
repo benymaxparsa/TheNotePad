@@ -46,7 +46,6 @@
     <addaction name="actionnew"/>
     <addaction name="actionopen"/>
     <addaction name="actionsave_as"/>
-    <addaction name="actionprint"/>
     <addaction name="actionexit"/>
    </widget>
    <widget class="QMenu" name="menuedit">
@@ -107,11 +106,6 @@
    </property>
    <property name="text">
     <string>save as</string>
-   </property>
-  </action>
-  <action name="actionprint">
-   <property name="text">
-    <string>print</string>
    </property>
   </action>
   <action name="actionexit">
