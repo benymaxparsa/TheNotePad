@@ -1,6 +1,6 @@
 # TheNotePad
 first Qt project for fun!
-it's a very simple project
+it's a very simple project.
 i have learned it from youtube (channel : derek banas)
 
 ------------------------------------------------DOWNLOAD--------------------------------------------------------
