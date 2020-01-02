@@ -29,10 +29,28 @@ void MainWindow::on_actionopen_triggered()
     if(!file.open(QIODevice::ReadOnly | QFile::Text))
     {
         QMessageBox::warning(this, "warning", "cannot open file : " + file.errorString());
+        return;
     }
     setWindowTitle(fileName);
     QTextStream in(&file);
     QString text = in.readAll();
     ui->textEdit->setText(text);
+    file.close();
+}
+
+void MainWindow::on_actionsave_as_triggered()
+{
+    QString fileName = QFileDialog::getSaveFileName(this, "save as");
+    QFile file(fileName);
+    if(!file.open(QFile::WriteOnly | QFile::Text))
+    {
+        QMessageBox::warning(this, "warning", "cannot save file : " + file.errorString());
+        return;
+    }
+    currentFile = fileName;
+    setWindowTitle(fileName);
+    QTextStream out(&file);
+    QString text = ui->textEdit->toPlainText();
+    out << text;
     file.close();
 }
